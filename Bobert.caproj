@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Bobert</name>
+    <description></description>
+    <version>1.0</version>
+    <author>BlockTwo</author>
+    <unique-id>3o5eyr0t0692f</unique-id>
+    <saved-with-version>9000</saved-with-version>
+    <used-plugins>
+        <plugin id="Audio" version="1">Audio</plugin>
+        <plugin id="Sprite" version="1">Sprite</plugin>
+        <plugin id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin id="appMobi" version="1">appMobi</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior id="Platform" version="1">Platform</behavior>
+        <behavior id="scrollto" version="1">Scroll To</behavior>
+        <behavior id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>640</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <configuration-settings>
+        <prop name="Clear background">No</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">On (scale mode)</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Preview mode">HTTP</prop>
+        <prop name="Sampling">Linear</prop>
+    </configuration-settings>
+    <object-folder expanded="1">
+        <object-type name="TiledBackground">
+            <plugin id="TiledBg" />
+            <texture />
+        </object-type>
+        <object-type name="Player">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="9" loop="1" name="Run" pingpong="0" repeatcount="1" repeatto="0" speed="8">
+                    <frame duration="1" hotspotX="0.502994" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.502857" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.502857" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.502857" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.502994" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.502924" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.505747" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.505556" hotspotY="1" />
+                    <frame duration="1" hotspotX="0.505814" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="PlayerBox">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform">
+                    <behavior id="Platform" />
+                </behavior-type>
+                <behavior-type name="ScrollTo">
+                    <behavior id="scrollto" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="1" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Platform">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506667">
+                        <collision-poly>
+                            <point x="0.0555556" y="0.215054" />
+                            <point x="0.5" y="0" />
+                            <point x="0.941667" y="0.225806" />
+                            <point x="0.983333" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.924731" />
+                            <point x="0.0222222" y="0.913979" />
+                            <point x="0.0111111" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Audio">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="appMobi">
+            <plugin id="appMobi" />
+        </object-type>
+        <object-type name="ArrowLeft">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.188235" y="0.247678" />
+                            <point x="0.498824" y="0.19195" />
+                            <point x="0.854118" y="0.19195" />
+                            <point x="1" y="0.498452" />
+                            <point x="0.856471" y="0.811145" />
+                            <point x="0.498824" y="0.811145" />
+                            <point x="0.188235" y="0.752322" />
+                            <point x="0" y="0.498452" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ArrowRight">
+            <plugin id="Sprite" />
+            <animation-folder expanded="1">
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.811765" y="0.752322" />
+                            <point x="0.501176" y="0.80805" />
+                            <point x="0.145882" y="0.80805" />
+                            <point x="0" y="0.501548" />
+                            <point x="0.143529" y="0.188855" />
+                            <point x="0.501176" y="0.188855" />
+                            <point x="0.811765" y="0.247678" />
+                            <point x="1" y="0.501548" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder expanded="1">
+        <layout>LayoutMain.xml</layout>
+    </layout-folder>
+    <event-folder expanded="1">
+        <event-sheet>EventMain.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Audio">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+            </properties>
+        </global-instance>
+        <global-instance type="appMobi" />
+    </global-instances>
+    <sounds-folder expanded="1">
+        <file name="Jumping-Hup.m4a" />
+        <file name="Jumping-Hup.ogg" />
+        <file name="Jumping-Hup.wav" />
+    </sounds-folder>
+    <music-folder expanded="1">
+        <file name="thoughtful_cheerful_pensive-attribution-licensed.m4a" />
+        <file name="thoughtful_cheerful_pensive-attribution-licensed.ogg" />
+        <file name="thoughtful_cheerful_pensive-attribution-licensed.wav" />
+    </music-folder>
+</c2project>
