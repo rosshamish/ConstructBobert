@@ -73,8 +73,8 @@
                         <width>95</width>
                         <height>22</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.50666666</hotspotY>
+                        <hotspotX>0.50526315</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -95,8 +95,8 @@
                         <width>95</width>
                         <height>22</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.50666666</hotspotY>
+                        <hotspotX>0.50526315</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -117,8 +117,8 @@
                         <width>95</width>
                         <height>22</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.50666666</hotspotY>
+                        <hotspotX>0.50526315</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -139,8 +139,8 @@
                         <width>95</width>
                         <height>22</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.50666666</hotspotY>
+                        <hotspotX>0.50526315</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -161,8 +161,8 @@
                         <width>95</width>
                         <height>22</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.50666666</hotspotY>
+                        <hotspotX>0.50526315</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -183,8 +183,8 @@
                         <width>95</width>
                         <height>22</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.50666666</hotspotY>
+                        <hotspotX>0.50526315</hotspotX>
+                        <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -216,7 +216,7 @@
                         <width>21.082870483</width>
                         <height>49.492019653</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
+                        <hotspotX>0.510638297</hotspotX>
                         <hotspotY>1</hotspotY>
                         <angle>0</angle>
                         <opacity>0.25</opacity>
@@ -268,14 +268,80 @@
                         <behavior-instance type="Pin" />
                     </behavior-instances>
                     <world>
-                        <x>160</x>
+                        <x>432</x>
                         <y>160</y>
                         <z>0</z>
-                        <width>320</width>
-                        <height>304</height>
+                        <width>200</width>
+                        <height>200</height>
                         <depth>0</depth>
                         <hotspotX>0.460000008</hotspotX>
                         <hotspotY>0.584999979</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Light">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-frame>0</initial-frame>
+                        <effect>Destination out</effect>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <world>
+                        <x>112</x>
+                        <y>336</y>
+                        <z>0</z>
+                        <width>200</width>
+                        <height>200</height>
+                        <depth>0</depth>
+                        <hotspotX>0.460000008</hotspotX>
+                        <hotspotY>0.584999979</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Light">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-frame>0</initial-frame>
+                        <effect>Destination out</effect>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <world>
+                        <x>272</x>
+                        <y>448</y>
+                        <z>0</z>
+                        <width>200</width>
+                        <height>200</height>
+                        <depth>0</depth>
+                        <hotspotX>0.460000008</hotspotX>
+                        <hotspotY>0.584999979</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="LightPlayer">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-frame>0</initial-frame>
+                        <effect>Destination out</effect>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Pin" />
+                    </behavior-instances>
+                    <world>
+                        <x>200.479995728</x>
+                        <y>195.479995728</y>
+                        <z>0</z>
+                        <width>288</width>
+                        <height>288</height>
+                        <depth>0</depth>
+                        <hotspotX>0.50999999</hotspotX>
+                        <hotspotY>0.595000029</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -311,16 +377,16 @@
                         </behavior-instance>
                     </behavior-instances>
                     <world>
-                        <x>96</x>
+                        <x>80</x>
                         <y>400</y>
                         <z>0</z>
-                        <width>80</width>
-                        <height>60</height>
+                        <width>144</width>
+                        <height>112</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.5</opacity>
                     </world>
                 </instance>
                 <instance type="ArrowRight">
@@ -340,16 +406,16 @@
                         </behavior-instance>
                     </behavior-instances>
                     <world>
-                        <x>240</x>
+                        <x>272</x>
                         <y>400</y>
                         <z>0</z>
-                        <width>80</width>
-                        <height>60</height>
+                        <width>144</width>
+                        <height>112</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.5</opacity>
                     </world>
                 </instance>
                 <instance type="ArrowJump">
@@ -369,16 +435,16 @@
                         </behavior-instance>
                     </behavior-instances>
                     <world>
-                        <x>560</x>
-                        <y>400</y>
+                        <x>568</x>
+                        <y>376</y>
                         <z>0</z>
-                        <width>60</width>
-                        <height>80</height>
+                        <width>128</width>
+                        <height>176</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
-                        <opacity>1</opacity>
+                        <opacity>0.5</opacity>
                     </world>
                 </instance>
             </instances>

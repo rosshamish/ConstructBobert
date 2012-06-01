@@ -3,6 +3,9 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>EventMain</name>
     <events>
+        <variable name="barelyTransparent" type="number">95</variable>
+        <variable name="mostlyTransparent" type="number">70</variable>
+        <variable comment="Opaque alpha value" name="opaque" type="number">100</variable>
         <variable comment="Whether or not background music is playing" name="musicPlaying" type="text">false</variable>
         <event-group description="" title="appMobi">
             <sub-events>
@@ -34,7 +37,7 @@
                 <action behavior="Pin" id="0" name="Pin to object" type="Player">
                     <param id="0" name="Pin to">PlayerBox</param>
                 </action>
-                <action behavior="Pin" id="0" name="Pin to object" type="Light">
+                <action behavior="Pin" id="0" name="Pin to object" type="LightPlayer">
                     <param id="0" name="Pin to">PlayerBox</param>
                 </action>
             </actions>
@@ -106,6 +109,7 @@
             </actions>
         </event-block>
         <event-group description="" title="Input" />
+        <comment>&quot;Left&quot; Input</comment>
         <event-block>
             <conditions>
                 <condition id="4" name="Is touching object" type="Touch">
@@ -119,8 +123,22 @@
                 <action id="7" name="Set mirrored" type="Player">
                     <param id="0" name="State">0</param>
                 </action>
+                <action id="-16" name="Set opacity" type="ArrowLeft">
+                    <param id="0" name="Opacity">barelyTransparent</param>
+                </action>
             </actions>
         </event-block>
+        <event-block>
+            <conditions>
+                <condition id="-22" name="Else" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" type="ArrowLeft">
+                    <param id="0" name="Opacity">mostlyTransparent</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>&quot;Right&quot; Input</comment>
         <event-block>
             <conditions>
                 <condition id="4" name="Is touching object" type="Touch">
@@ -134,8 +152,22 @@
                 <action id="7" name="Set mirrored" type="Player">
                     <param id="0" name="State">1</param>
                 </action>
+                <action id="-16" name="Set opacity" type="ArrowRight">
+                    <param id="0" name="Opacity">barelyTransparent</param>
+                </action>
             </actions>
         </event-block>
+        <event-block>
+            <conditions>
+                <condition id="-22" name="Else" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" type="ArrowRight">
+                    <param id="0" name="Opacity">mostlyTransparent</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>&quot;Jump&quot; Input</comment>
         <event-block>
             <conditions>
                 <condition id="4" name="Is touching object" type="Touch">
@@ -145,6 +177,19 @@
             <actions>
                 <action behavior="Platform" id="7" name="Simulate control" type="PlayerBox">
                     <param id="0" name="Control">2</param>
+                </action>
+                <action id="-16" name="Set opacity" type="ArrowJump">
+                    <param id="0" name="Opacity">barelyTransparent</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block>
+            <conditions>
+                <condition id="-22" name="Else" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" type="ArrowJump">
+                    <param id="0" name="Opacity">mostlyTransparent</param>
                 </action>
             </actions>
         </event-block>
