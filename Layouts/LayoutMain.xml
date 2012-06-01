@@ -64,7 +64,7 @@
                         <effect>(none)</effect>
                     </properties>
                     <behavior-instances>
-                        <behavior-instance type="Solid" />
+                        <behavior-instance type="Jumpthru" />
                     </behavior-instances>
                     <world>
                         <x>153.812835693</x>
@@ -86,11 +86,11 @@
                         <effect>(none)</effect>
                     </properties>
                     <behavior-instances>
-                        <behavior-instance type="Solid" />
+                        <behavior-instance type="Jumpthru" />
                     </behavior-instances>
                     <world>
-                        <x>361.332519531</x>
-                        <y>267.891967773</y>
+                        <x>384</x>
+                        <y>320</y>
                         <z>0</z>
                         <width>95</width>
                         <height>22</height>
@@ -108,7 +108,7 @@
                         <effect>(none)</effect>
                     </properties>
                     <behavior-instances>
-                        <behavior-instance type="Solid" />
+                        <behavior-instance type="Jumpthru" />
                     </behavior-instances>
                     <world>
                         <x>361.332519531</x>
@@ -130,7 +130,7 @@
                         <effect>(none)</effect>
                     </properties>
                     <behavior-instances>
-                        <behavior-instance type="Solid" />
+                        <behavior-instance type="Jumpthru" />
                     </behavior-instances>
                     <world>
                         <x>271.420532227</x>
@@ -152,7 +152,7 @@
                         <effect>(none)</effect>
                     </properties>
                     <behavior-instances>
-                        <behavior-instance type="Solid" />
+                        <behavior-instance type="Jumpthru" />
                     </behavior-instances>
                     <world>
                         <x>75.616539001</x>
@@ -174,7 +174,7 @@
                         <effect>(none)</effect>
                     </properties>
                     <behavior-instances>
-                        <behavior-instance type="Solid" />
+                        <behavior-instance type="Jumpthru" />
                     </behavior-instances>
                     <world>
                         <x>520.264221191</x>
@@ -189,42 +189,9 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-            </instances>
-        </layer>
-        <layer name="Player">
-            <initially-visible>1</initially-visible>
-            <background-color>255,255,255</background-color>
-            <transparent>1</transparent>
-            <parallax>
-                <x>1</x>
-                <y>1</y>
-            </parallax>
-            <zoom-rate>1</zoom-rate>
-            <opacity>1</opacity>
-            <force-own-texture>0</force-own-texture>
-            <instances>
-                <instance type="Player">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
-                    </properties>
-                    <world>
-                        <x>176.841369629</x>
-                        <y>150.469451904</y>
-                        <z>0</z>
-                        <width>37</width>
-                        <height>61</height>
-                        <depth>0</depth>
-                        <hotspotX>0.502994001</hotspotX>
-                        <hotspotY>1</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
                 <instance type="PlayerBox">
                     <properties>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <initial-frame>0</initial-frame>
                         <effect>(none)</effect>
                     </properties>
@@ -255,68 +222,60 @@
                         <opacity>0.25</opacity>
                     </world>
                 </instance>
-                <instance type="Platform">
+                <instance type="Player">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-frame>0</initial-frame>
                         <effect>(none)</effect>
                     </properties>
                     <behavior-instances>
-                        <behavior-instance type="Solid" />
+                        <behavior-instance type="Pin" />
                     </behavior-instances>
                     <world>
-                        <x>230</x>
-                        <y>961</y>
+                        <x>176.841369629</x>
+                        <y>150.469451904</y>
                         <z>0</z>
-                        <width>95</width>
-                        <height>22</height>
+                        <width>37</width>
+                        <height>61</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.50666666</hotspotY>
+                        <hotspotX>0.502994001</hotspotX>
+                        <hotspotY>1</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Platform">
+            </instances>
+        </layer>
+        <layer name="Lighting">
+            <initially-visible>1</initially-visible>
+            <background-color>0,0,0</background-color>
+            <transparent>0</transparent>
+            <parallax>
+                <x>1</x>
+                <y>1</y>
+            </parallax>
+            <zoom-rate>1</zoom-rate>
+            <opacity>1</opacity>
+            <force-own-texture>1</force-own-texture>
+            <instances>
+                <instance type="Light">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
+                        <effect>Destination out</effect>
                     </properties>
                     <behavior-instances>
-                        <behavior-instance type="Solid" />
+                        <behavior-instance type="Pin" />
                     </behavior-instances>
                     <world>
-                        <x>310</x>
-                        <y>961</y>
+                        <x>160</x>
+                        <y>160</y>
                         <z>0</z>
-                        <width>95</width>
-                        <height>22</height>
+                        <width>320</width>
+                        <height>304</height>
                         <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.50666666</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Platform">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-frame>0</initial-frame>
-                        <effect>(none)</effect>
-                    </properties>
-                    <behavior-instances>
-                        <behavior-instance type="Solid" />
-                    </behavior-instances>
-                    <world>
-                        <x>150</x>
-                        <y>961</y>
-                        <z>0</z>
-                        <width>95</width>
-                        <height>22</height>
-                        <depth>0</depth>
-                        <hotspotX>0.5</hotspotX>
-                        <hotspotY>0.50666666</hotspotY>
+                        <hotspotX>0.460000008</hotspotX>
+                        <hotspotY>0.584999979</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -328,8 +287,8 @@
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
             <parallax>
-                <x>1</x>
-                <y>1</y>
+                <x>0</x>
+                <y>0</y>
             </parallax>
             <zoom-rate>1</zoom-rate>
             <opacity>1</opacity>
@@ -341,9 +300,19 @@
                         <initial-frame>0</initial-frame>
                         <effect>(none)</effect>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Anchor">
+                            <properties>
+                                <left-edge>Window left</left-edge>
+                                <top-edge>Window bottom</top-edge>
+                                <right-edge>None</right-edge>
+                                <bottom-edge>None</bottom-edge>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <world>
                         <x>96</x>
-                        <y>416</y>
+                        <y>400</y>
                         <z>0</z>
                         <width>80</width>
                         <height>60</height>
@@ -360,12 +329,51 @@
                         <initial-frame>0</initial-frame>
                         <effect>(none)</effect>
                     </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Anchor">
+                            <properties>
+                                <left-edge>Window left</left-edge>
+                                <top-edge>Window bottom</top-edge>
+                                <right-edge>None</right-edge>
+                                <bottom-edge>None</bottom-edge>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
                     <world>
                         <x>240</x>
-                        <y>416</y>
+                        <y>400</y>
                         <z>0</z>
                         <width>80</width>
                         <height>60</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="ArrowJump">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-frame>0</initial-frame>
+                        <effect>(none)</effect>
+                    </properties>
+                    <behavior-instances>
+                        <behavior-instance type="Anchor">
+                            <properties>
+                                <left-edge>Window right</left-edge>
+                                <top-edge>Window bottom</top-edge>
+                                <right-edge>None</right-edge>
+                                <bottom-edge>None</bottom-edge>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <world>
+                        <x>560</x>
+                        <y>400</y>
+                        <z>0</z>
+                        <width>60</width>
+                        <height>80</height>
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
