@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>EventMain</name>
     <events>
+        <variable name="coinsCollected" type="number">0</variable>
         <variable name="barelyTransparent" type="number">95</variable>
         <variable name="mostlyTransparent" type="number">70</variable>
         <variable comment="Opaque alpha value" name="opaque" type="number">100</variable>
@@ -85,6 +86,21 @@
                     <param id="0" name="X">150</param>
                     <param id="1" name="Y">100</param>
                 </action>
+            </actions>
+        </event-block>
+        <event-group collapsed="1" description="" title="Collectables &amp; Scoring" />
+        <event-block>
+            <conditions>
+                <condition id="1" name="Is overlapping another object" type="PlayerBox">
+                    <param id="0" name="Object">Coin</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" type="System">
+                    <param id="0" name="Variable">coinsCollected</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Destroy" type="Coin" />
             </actions>
         </event-block>
         <event-group description="" title="Audio" />
