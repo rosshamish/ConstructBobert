@@ -528,10 +528,10 @@
                 </instance>
                 <instance type="Score">
                     <properties>
-                        <text>Score: &amp; coinsCollected</text>
+                        <text>Score: </text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Verdana,-16,700,0</font>
-                        <color>255,255,255</color>
+                        <color>223,248,180</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <hotspot>Top-left</hotspot>
                         <wrapping>Character</wrapping>

@@ -103,6 +103,16 @@
                 <action id="-9" name="Destroy" type="Coin" />
             </actions>
         </event-block>
+        <event-block>
+            <conditions>
+                <condition id="-1" name="Every tick" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" type="Score">
+                    <param id="0" name="Text">&quot;Coins: &quot; &amp; coinsCollected</param>
+                </action>
+            </actions>
+        </event-block>
         <event-group description="" title="Audio" />
         <event-block>
             <conditions>
